@@ -1,0 +1,28 @@
+<div class="limiter">
+        <div class="container-login">
+           <div class="wrap-login p-t-85 p-b-20">
+              <form class="login-form validate-form">
+                 <span class="login-form-title p-b-70">
+                 Welcome to Student Portal
+                 </span> 
+                 <span class="login-form-avatar">
+                 <img src="/assets/myAvatar.svg" alt="AVATAR">
+                 </span>
+                 <div class="wrap-input100 validate-input m-t-85 m-b-35" data-validate="Enter username">
+                    <input class="input100" type="text" name="username" [(ngModel)]="userName" placeholder="User Name">
+                    
+                 </div>
+                 <div class="wrap-input100 validate-input m-b-50" data-validate="Enter password">
+                    <input class="input100" type="password" name="pass" [(ngModel)]="userPassword" placeholder="Password">
+                    
+                 </div>
+                 <div class="container-login-form-btn">
+                     <label *ngIf="errorMessage" class="error">{{errorMessage}}</label>
+                    <button class="login-form-btn" (click)= "doLogin()">
+                    Login 
+                    </button>
+                 </div> 
+              </form>
+           </div>
+        </div>
+     </div>
